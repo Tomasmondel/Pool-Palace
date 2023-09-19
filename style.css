@@ -11,6 +11,19 @@ body{
     background-size: cover;
     background-position: center;
     display: block;
+    position: relative;
+}
+.fondo-contacto{
+    min-height: 100vh;
+    background-image:url(./recursos/fondo-contactos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    position: relative;
+}
+.texto-nav a{
+    color: black;
 }
 
 /*navbar*/
@@ -78,13 +91,15 @@ margin-left: 2.5rem;
 
 /*footer*/
 .footer{
-    width: auto;
-    height: 80px;
+    
     border: 1px solid black;
     display: flex;
     align-items: center;
     justify-content:center;
     background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 80px;
 
 }
 
@@ -101,6 +116,11 @@ margin-left: 2.5rem;
 @media(max-width: 992px){
     .header{
         padding: 1.3rem 5%;
+    }
+    .gridBody #footer{
+        grid-area: footer;
+        
+        
     }
 }
 @media(max-width: 768px){
@@ -150,7 +170,7 @@ margin-left: 2.5rem;
 
 .gridBody{
     display: grid;
-    grid-template-rows:80px 350px 300px 80px;
+    grid-template-rows:90px 1fr 1fr auto;
     grid-template-areas:  "nav" 
                         "presentacion"  
                         "carrousel" 
@@ -161,12 +181,15 @@ margin-left: 2.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 70px;
 }
 .gridBody #presentacion{
     grid-area: presentacion;
 }
 .gridBody #footer{
     grid-area: footer;
+   
+    
 }
 .card{
    
