@@ -170,7 +170,7 @@ margin-left: 2.5rem;
 
 .gridBody{
     display: grid;
-    grid-template-rows:90px 1fr 1fr auto;
+    grid-template-rows:90px 1fr 0.7fr auto;
     grid-template-areas:  "nav" 
                         "presentacion"  
                         "carrousel" 
